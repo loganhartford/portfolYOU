@@ -13,6 +13,7 @@
 }
 
 .navbar-themed {
+
   .navbar-brand,
   .navbar-nav .nav-link.active {
     @include themed(color, $text-black, $text-white);
@@ -31,3 +32,6 @@
   @include themed(background-color, $light, $dark);
 }
 
+#theme-toggler {
+  display: none;
+}
