@@ -1,7 +1,7 @@
 <div class="card-columns m-3 mt-5">
 
   <!-- Remote Projects -->
-  {% for remote_project in page.remote_other_projects %}
+  {% for remote_project in page.remote_otherprojects %}
 
   {%- for repo in site.github.public_repositories -%}
 
@@ -34,7 +34,7 @@
   {% endfor %}
 
   <!-- Local Projects -->
-  {% for project in site.other_projects %}
+  {% for project in site.otherprojects %}
 
   {%- assign project_type = "local" -%}
   {%- assign project_id = project.name | slugify -%}
