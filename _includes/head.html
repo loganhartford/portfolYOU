@@ -4,9 +4,16 @@
   {% assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
   {% assign image = page.image | default: site.author.image %}
 
-  {% if page.name and page.collection == 'projects' %}
-    {% assign title = page.name | escape %}
+  {% if page.name and page.collection == 'mechatronicsprojects' %}
+  {% assign title = page.name | escape %}
+  {% elsif page.name and page.collection == 'hardwareprojects' %}
+  {% assign title = page.name | escape %}
+  {% elsif page.name and page.collection == 'otherprojects' %}
+  {% assign title = page.name | escape %}
+  {% elsif page.name and page.collection == 'mechanicalprojects' %}
+  {% assign title = page.name | escape %}
   {% endif %}
+
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
