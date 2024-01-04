@@ -1,4 +1,4 @@
-{%- assign combined_posts = site.posts | concat: site.books -%}
+{%- assign combined_posts = site.posts | concat: site.books | concat: site.studyguides -%}
 
 {%- assign tags = blank -%}
 {%- for post in combined_posts -%}
