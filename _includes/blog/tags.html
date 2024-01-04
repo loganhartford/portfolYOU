@@ -1,4 +1,4 @@
-{%- assign combined_posts = site.cheatsheets | concat: site.books | concat: site.studyguides -%}
+{%- assign combined_posts = site.cheatsheets | concat: site.books | concat: site.studyguides | concat: site.articles -%}
 
 {%- assign tags = blank -%}
 {%- for post in combined_posts -%}

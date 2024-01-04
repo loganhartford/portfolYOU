@@ -1,0 +1,8 @@
+<div class="card-group mt-2">
+
+  {% assign sorted = site.articles | sort: 'date' | reverse %}
+  {% for post in sorted %}
+    {% include cheatsheets/post-card.html %}
+  {% endfor %}
+
+</div>
