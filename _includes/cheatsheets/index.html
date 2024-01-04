@@ -1,7 +1,8 @@
 <div class="card-group mt-2">
 
-  {% for post in site.cheatsheets %}
-  {% include cheatsheets/post-card.html %}
+  {% assign cheatsheets_sorted = site.cheatsheets | sort: 'date' | reverse %}
+  {% for post in cheatsheets_sorted %}
+    {% include cheatsheets/post-card.html %}
   {% endfor %}
 
 </div>
