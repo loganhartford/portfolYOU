@@ -2,10 +2,10 @@
 layout: page
 ---
 
-<a href="{{ page.url | relative_url }}"><h1><b>{{ page.title }}</b></h1></a>
+<h1><b>{{ page.title }}</b></h1>
 
 {%- if page.author != empty -%}
-<p><b>By {{ page.author }}</b></p>
+<a href="{{ page.url | relative_url }}"><b>By {{ page.author }}</b></a>
 {%- endif -%}
 
 <p class="post-metadata text-muted">
