@@ -5,9 +5,9 @@ layout: page
 <h1><b>{{ page.title }}</b></h1>
 
 {%- if page.author != empty -%}
-<a href="{{ page.book_url | relative_url }}"><b>By {{ page.author }}</b></a>
+<b>By {{ page.author }}</b>
 {%- endif -%}
-<br>
+
 <p class="post-metadata text-muted">
   {{ page.date | date_to_long_string }} -
   <b>
